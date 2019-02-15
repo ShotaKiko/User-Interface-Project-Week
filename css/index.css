@@ -1,3 +1,11 @@
+.flexrow-mixin {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flexcolumn-mixin {
+  display: flex;
+  flex-direction: column;
+}
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
@@ -142,5 +150,8 @@ html {
 }
 body {
   background: #FFFFFF;
+  color: #222222;
   font-family: Roboto, Arial, sans-serif;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
 }
