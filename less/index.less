@@ -142,6 +142,16 @@ html{
   }  
 }
 
+.projectHeader{
+  width: 80%;
+  font-size: @fontSizeSubHeaders;
+  font-weight: @fontWeightSubHeaders;
+  color: @colorSubHeader;
+  margin-left: 15rem;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+
 .projects{
   .flexcolumn-mixin();
   border: @bordertest;
@@ -200,7 +210,29 @@ html{
      
     }
   }
+}
 
 
+.footer{
+  background-color: @footerBackground;
+  color: @colorFooter;
+  
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  
+
+  
+  .footerContainer{
+    line-height: 2.4rem;
+    .flexrow-mixin();
+    justify-content: space-evenly;
+  
+  }
+
+  .copyright{
+    margin: 0 auto;
+    margin-left: 40%;
+  }
 
 }

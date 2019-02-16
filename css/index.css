@@ -251,6 +251,15 @@ html body {
 .rowContentOne .boxDesign p {
   margin-bottom: 1.5rem;
 }
+.projectHeader {
+  width: 80%;
+  font-size: 2.8rem;
+  font-weight: Bold;
+  color: #222222;
+  margin-left: 15rem;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -304,4 +313,20 @@ html body {
 }
 .projects .blocks-project .blocks-text p {
   margin: 2rem 0;
+}
+.footer {
+  background-color: #828282;
+  color: #FFFFFF;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.footer .footerContainer {
+  line-height: 2.4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .copyright {
+  margin: 0 auto;
+  margin-left: 40%;
 }
