@@ -4,22 +4,203 @@
 @import "reset.less";
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-/* Your Code Goes Here */
-
 * {
   box-sizing: border-box;
 }
 
 html{
   font-size: 62.5%;
+  
+  body{
+    background: @backgroundColor;
+    color: @textColor;
+    font-family: @fontFamily;
+    font-weight: @fontWeightGeneralText;
+    line-height: @lineHeightGeneralText;
+    font-size: @fontSizeGeneralText;
+  }
 
 }
 
-body{
-  background: #FFFFFF;
-  color: #222222;
-  font-family: Roboto, Arial, sans-serif;
-  line-height: 2.4rem;
-  font-size: 1.6rem;
+
+.header{
+  background-color: #828282; //ADD CORRECT NAV COLOR
+  border: 1px solid red;
+  color: @jumbotronColor;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .title{
+    border: @bordertest;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu{
+    width: 25%;
+    border: @bordertest
+  }
+}
+ 
+.watermark{
+    width: 100%;
+    border: @bordertest;
+
+    .banner-img{
+      width: 100%;
+
+      .jumbotron{
+        width: 100%;
+      }
+    }
 }
 
+.rowContentOne{
+  .flexrow-mixin();
+  border: @bordertest;
+  flex-wrap: wrap;
+
+  .boxArchitects{
+    border: 2px dashed green;
+    margin-bottom: 9.0rem;
+    width: 80%;
+    .flexrow-mixin();
+    align-items: center;
+
+    .architectsText{
+      width: 50%;
+      line-height: @lineHeightGeneralText;
+      font-weight: @fontWeightGeneralText;
+      font-size: @fontSizeGeneralText;
+      padding: 0 6%;
+      border: @bordertest;
+      
+
+    }
+
+    .penAndPaperContainer{
+      width: 45%;
+     
+      
+      border: @bordertest;
+
+      .penAndPaper{
+        width: 100%;
+      }
+    }
+
+    h3{
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    p{
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .boxDesign{
+    border: 2px dashed green;
+    width: 80%;
+    .flexrow-mixin();
+    align-items: center;
+
+    .designText{
+      width: 50%;
+      line-height: @lineHeightGeneralText;
+      font-weight: @fontWeightGeneralText;
+      font-size: @fontSizeGeneralText;
+      padding: 0 6%;
+      border: @bordertest;
+      
+
+    }
+
+    .horizonContainer{
+      width: 50%;
+      border: @bordertest;
+
+      .horizon{
+        width: 100%;
+      }
+    }
+
+    h3{
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    p{
+      margin-bottom: 1.5rem;
+    }
+  }  
+}
+
+.projects{
+  .flexcolumn-mixin();
+  border: @bordertest;
+  align-items: center;
+
+  .villa-project{
+    border: 2px solid blue;
+    width: 80%;
+    .villasImg{
+      width: 100%;
+    }
+    .villa-text{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 30%;
+      p{
+        margin: 2.0rem 0;
+      }
+     
+    }
+  }
+
+  .outskirts-project{
+    border: 2px solid blue;
+    width: 80%;
+    .outskirtsImg{
+      width: 100%;
+    }
+    .outskirts-text{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 30%;
+      p{
+        margin: 2.0rem 0;
+      }
+     
+    }
+  }
+
+  .blocks-project{
+    border: 2px solid blue;
+    width: 80%;
+    .blocksImg{
+      width: 100%;
+    }
+    .blocks-text{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 30%;
+      p{
+        margin: 2.0rem 0;
+      }
+     
+    }
+  }
+
+
+
+}

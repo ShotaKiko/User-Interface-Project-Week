@@ -141,17 +141,167 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Your Code Goes Here */
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
 }
-body {
+html body {
   background: #FFFFFF;
   color: #222222;
   font-family: Roboto, Arial, sans-serif;
+  font-weight: Regular;
   line-height: 2.4rem;
   font-size: 1.6rem;
+}
+.header {
+  background-color: #828282;
+  border: 1px solid red;
+  color: #FFFFFF;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .title {
+  border: 2px dashed purple;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .menu {
+  width: 25%;
+  border: 2px dashed purple;
+}
+.watermark {
+  width: 100%;
+  border: 2px dashed purple;
+}
+.watermark .banner-img {
+  width: 100%;
+}
+.watermark .banner-img .jumbotron {
+  width: 100%;
+}
+.rowContentOne {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px dashed purple;
+  flex-wrap: wrap;
+}
+.rowContentOne .boxArchitects {
+  border: 2px dashed green;
+  margin-bottom: 9rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rowContentOne .boxArchitects .architectsText {
+  width: 50%;
+  line-height: 2.4rem;
+  font-weight: Regular;
+  font-size: 1.6rem;
+  padding: 0 6%;
+  border: 2px dashed purple;
+}
+.rowContentOne .boxArchitects .penAndPaperContainer {
+  width: 45%;
+  border: 2px dashed purple;
+}
+.rowContentOne .boxArchitects .penAndPaperContainer .penAndPaper {
+  width: 100%;
+}
+.rowContentOne .boxArchitects h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.rowContentOne .boxArchitects p {
+  margin-bottom: 1.5rem;
+}
+.rowContentOne .boxDesign {
+  border: 2px dashed green;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rowContentOne .boxDesign .designText {
+  width: 50%;
+  line-height: 2.4rem;
+  font-weight: Regular;
+  font-size: 1.6rem;
+  padding: 0 6%;
+  border: 2px dashed purple;
+}
+.rowContentOne .boxDesign .horizonContainer {
+  width: 50%;
+  border: 2px dashed purple;
+}
+.rowContentOne .boxDesign .horizonContainer .horizon {
+  width: 100%;
+}
+.rowContentOne .boxDesign h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.rowContentOne .boxDesign p {
+  margin-bottom: 1.5rem;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed purple;
+  align-items: center;
+}
+.projects .villa-project {
+  border: 2px solid blue;
+  width: 80%;
+}
+.projects .villa-project .villasImg {
+  width: 100%;
+}
+.projects .villa-project .villa-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+}
+.projects .villa-project .villa-text p {
+  margin: 2rem 0;
+}
+.projects .outskirts-project {
+  border: 2px solid blue;
+  width: 80%;
+}
+.projects .outskirts-project .outskirtsImg {
+  width: 100%;
+}
+.projects .outskirts-project .outskirts-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+}
+.projects .outskirts-project .outskirts-text p {
+  margin: 2rem 0;
+}
+.projects .blocks-project {
+  border: 2px solid blue;
+  width: 80%;
+}
+.projects .blocks-project .blocksImg {
+  width: 100%;
+}
+.projects .blocks-project .blocks-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+}
+.projects .blocks-project .blocks-text p {
+  margin: 2rem 0;
 }
