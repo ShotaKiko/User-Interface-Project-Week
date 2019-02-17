@@ -163,6 +163,12 @@ html body {
   display: flex;
   justify-content: space-between;
 }
+.header .hamburger-closed {
+  display: none;
+}
+.header .menu-options {
+  display: none;
+}
 .header .title {
   border: 2px dashed purple;
   width: 10%;
@@ -173,6 +179,12 @@ html body {
 .header .menu {
   width: 25%;
   border: 2px dashed purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .menu .hamburger-open {
+  padding-left: 10rem;
 }
 .watermark {
   width: 100%;
@@ -321,12 +333,20 @@ html body {
   margin: 0 auto;
   padding-top: 5rem;
 }
+.footer span {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.footer h4 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
 .footer .footerContainer {
   line-height: 2.4rem;
   display: flex;
   justify-content: space-evenly;
 }
 .footer .copyright {
-  margin: 0 auto;
   margin-left: 40%;
+  padding-top: 2.2rem;
 }
