@@ -46,7 +46,9 @@ html{
     width: 10%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    font-size: @fontSizeNavLogo;
+    font-weight: @fontWeightNavLogo;
   }
 
   .menu{
@@ -87,6 +89,18 @@ html{
     .flexrow-mixin();
     align-items: center;
 
+    .button{
+      background-color: @backgroundColor;
+      border: 1px solid @buttonBorders;
+      color: black;
+      padding: 15px 30px;
+      width: 50%;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+  }
+
     .architectsText{
       width: 50%;
       line-height: @lineHeightGeneralText;
@@ -125,6 +139,18 @@ html{
     width: 80%;
     .flexrow-mixin();
     align-items: center;
+
+    .button{
+      background-color: @backgroundColor;
+      border: 1px solid @buttonBorders;
+      color: black;
+      padding: 15px 30px;
+      width: 50%;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+  }
 
     .designText{
       width: 50%;
@@ -237,19 +263,32 @@ html{
   margin: 0 auto;
   padding-top: 5rem;
 
+  .emailAddress{
+    line-height: @lineHeightFooterHeading;
+    width: 85%;
+  }
+
   span{
     font-weight: bold;
     font-size: 2.2rem;
   }
   
   h4{
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     font-weight: bold;
+    line-height: @lineHeightFooterHeading;
   }
 
+  li{
+    font-size: @fontSizeFooter;
+  }
   
+  p{
+    line-height: @lineHeightFooter
+  }
+
   .footerContainer{
-    line-height: 2.4rem;
+    line-height: 2.0rem;
     .flexrow-mixin();
     justify-content: space-evenly;
   
@@ -258,7 +297,7 @@ html{
   .copyright{
     //margin: 0 auto; TROUBLESHOOT LATER: WHy wont this center
     margin-left: 40%;
-    padding-top: 2.2rem;
+    padding-top: 1.8rem;
   }
 
 }
