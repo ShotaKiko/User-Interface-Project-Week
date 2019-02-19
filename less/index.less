@@ -370,6 +370,11 @@ html{
       p{
         margin: 2.0rem 0;
       }
+
+      @media @mobile{
+        width: 95%;
+        margin: 0 auto;
+      }
      
     }
   }
@@ -379,14 +384,20 @@ html{
 .footer{
   background-color: @footerBackground;
   color: @colorFooter;
-  
   width: 80%;
   margin: 0 auto;
   padding-top: 5rem;
+  @media @mobile{
+    max-width: 498px;
+    width: 100%;
+  }
 
   .emailAddress{
     line-height: @lineHeightFooterHeading;
     width: 85%;
+    margin-top: 1rem;
+    height: 5rem;
+    border-radius: 7.5px;
   }
 
   span{
@@ -399,6 +410,19 @@ html{
     font-weight: bold;
     line-height: @lineHeightFooterHeading;
   }
+  
+  .share{
+    margin-top: 1rem;
+  }
+  
+  @media @mobile{
+    h5{
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    
+  }
 
   li{
     font-size: @fontSizeFooter;
@@ -409,9 +433,18 @@ html{
   }
 
   .footerContainer{
-    line-height: 2.0rem;
+    line-height: 2.6rem;
     .flexrow-mixin();
     justify-content: space-evenly;
+
+    @media @mobile{
+      .flexcolumn-mixin();
+      margin-left: 4rem;
+      line-height: 2.6rem;
+      .address{
+        margin-top: 3rem;
+      }
+    }
   
   }
 
@@ -419,6 +452,11 @@ html{
     //margin: 0 auto; TROUBLESHOOT LATER: Why wont this center
     margin-left: 40%;
     padding-top: 1.8rem;
+
+    @media @mobile{
+      margin-left: 8%;
+      margin-top: 2rem;
+    }
   }
 
 }
