@@ -18,6 +18,22 @@ html{
     font-weight: @fontWeightGeneralText;
     line-height: @lineHeightGeneralText;
     font-size: @fontSizeGeneralText;
+    @media @mobile{
+      background-color: aquamarine;
+      // .desktop{
+      //   display: none;
+      // }
+    }
+
+    .mobileImages{
+      display: none;
+      @media @mobile {
+        display: 1;
+        
+      }
+    }
+
+
   }
 
 }
@@ -28,32 +44,51 @@ html{
   border: 1px solid red;
   color: @jumbotronColor;
   height: 60px;
-
   display: flex;
   justify-content: space-between;
 
-  .hamburger-closed{
-    display: none;
+  @media @mobile{
+    border: @bordertest;
+    max-width: 498px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
 
+  .hamburger-closed{
+   display: none;
+    border:@bordertest;
+  }
+
+  .hamburger-open{
+    border: @bordertest;
+    @media @mobile{
+      margin-right: 4.5rem;
+      
+    }
   }
 
   .menu-options{
     display: none;
+    
   }
 
   .title{
-    border: @bordertest;
+    // border: @bordertest;
     width: 10%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-size: @fontSizeNavLogo;
     font-weight: @fontWeightNavLogo;
+    @media @mobile{
+      margin-left: 1.5rem;
+    }
   }
 
   .menu{
     width: 25%;
-    border: @bordertest;
+    // border: @bordertest;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +105,10 @@ html{
     position: relative;
     text-align: left;
     color: @jumbotronColor;
+    @media @mobile{
+      max-width: 498px;
+      width: 100%;
+    }
 
     .motto{
       position: absolute;
@@ -78,6 +117,11 @@ html{
       font-size: @fontSizeJumbotron;
       line-height: @lineHeightJumbotron;
       font-weight: @fontWeightJumbotron;
+      @media @mobile{
+        bottom: 2rem;
+        left: 1.5rem;
+        font-size: 64px; 
+      }
     }
 
     .banner-img{
@@ -91,11 +135,12 @@ html{
 
 .rowContentOne{
   .flexrow-mixin();
-  border: @bordertest;
+  // border: @bordertest;
   flex-wrap: wrap;
+  margin-top: 3rem;
 
   .boxArchitects{
-    border: 2px dashed green;
+    // border: 2px dashed green;
     margin-bottom: 9.0rem;
     width: 80%;
     .flexrow-mixin();
@@ -119,7 +164,7 @@ html{
       font-weight: @fontWeightGeneralText;
       font-size: @fontSizeGeneralText;
       padding: 0 6%;
-      border: @bordertest;
+      // border: @bordertest;
       
 
     }
@@ -128,7 +173,7 @@ html{
       width: 45%;
      
       
-      border: @bordertest;
+      // border: @bordertest;
 
       .penAndPaper{
         width: 100%;
@@ -147,7 +192,7 @@ html{
   }
   
   .boxDesign{
-    border: 2px dashed green;
+    // border: 2px dashed green;
     width: 80%;
     .flexrow-mixin();
     align-items: center;
@@ -170,14 +215,14 @@ html{
       font-weight: @fontWeightGeneralText;
       font-size: @fontSizeGeneralText;
       padding: 0 6%;
-      border: @bordertest;
+      // border: @bordertest;
       
 
     }
 
     .horizonContainer{
       width: 50%;
-      border: @bordertest;
+      // border: @bordertest;
 
       .horizon{
         width: 100%;
@@ -208,11 +253,11 @@ html{
 
 .projects{
   .flexcolumn-mixin();
-  border: @bordertest;
+  // border: @bordertest;
   align-items: center;
 
   .villa-project{
-    border: 2px solid blue;
+    // border: 2px solid blue;
     width: 80%;
     .villasImg{
       width: 100%;
@@ -252,7 +297,7 @@ html{
   }
 
   .outskirts-project{
-    border: 2px solid blue;
+    // border: 2px solid blue;
     width: 80%;
     .outskirtsImg{
       width: 100%;
@@ -292,7 +337,7 @@ html{
   }
 
   .blocks-project{
-    border: 2px solid blue;
+    // border: 2px solid blue;
     width: 80%;
     .blocksImg{
       width: 100%;
@@ -371,7 +416,7 @@ html{
   }
 
   .copyright{
-    //margin: 0 auto; TROUBLESHOOT LATER: WHy wont this center
+    //margin: 0 auto; TROUBLESHOOT LATER: Why wont this center
     margin-left: 40%;
     padding-top: 1.8rem;
   }

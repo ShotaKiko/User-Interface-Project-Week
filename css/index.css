@@ -155,6 +155,19 @@ html body {
   line-height: 2.4rem;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  html body {
+    background-color: aquamarine;
+  }
+}
+html body .mobileImages {
+  display: none;
+}
+@media (max-width: 500px) {
+  html body .mobileImages {
+    display: 1;
+  }
+}
 .header {
   background-color: #828282;
   border: 1px solid red;
@@ -163,14 +176,31 @@ html body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .header {
+    border: 2px dashed green;
+    max-width: 498px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+}
 .header .hamburger-closed {
   display: none;
+  border: 2px dashed green;
+}
+.header .hamburger-open {
+  border: 2px dashed green;
+}
+@media (max-width: 500px) {
+  .header .hamburger-open {
+    margin-right: 4.5rem;
+  }
 }
 .header .menu-options {
   display: none;
 }
 .header .title {
-  border: 2px dashed purple;
   width: 10%;
   display: flex;
   align-items: center;
@@ -178,9 +208,13 @@ html body {
   font-size: 2.4rem;
   font-weight: Bold;
 }
+@media (max-width: 500px) {
+  .header .title {
+    margin-left: 1.5rem;
+  }
+}
 .header .menu {
   width: 25%;
-  border: 2px dashed purple;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,10 +224,16 @@ html body {
 }
 .watermark {
   width: 100%;
-  border: 2px dashed purple;
+  border: 2px dashed green;
   position: relative;
   text-align: left;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .watermark {
+    max-width: 498px;
+    width: 100%;
+  }
 }
 .watermark .motto {
   position: absolute;
@@ -202,6 +242,13 @@ html body {
   font-size: 6.4rem;
   line-height: 7.5rem;
   font-weight: Bold;
+}
+@media (max-width: 500px) {
+  .watermark .motto {
+    bottom: 2rem;
+    left: 1.5rem;
+    font-size: 64px;
+  }
 }
 .watermark .banner-img {
   width: 100%;
@@ -212,11 +259,10 @@ html body {
 .rowContentOne {
   display: flex;
   justify-content: space-evenly;
-  border: 2px dashed purple;
   flex-wrap: wrap;
+  margin-top: 3rem;
 }
 .rowContentOne .boxArchitects {
-  border: 2px dashed green;
   margin-bottom: 9rem;
   width: 80%;
   display: flex;
@@ -240,11 +286,9 @@ html body {
   font-weight: Regular;
   font-size: 1.6rem;
   padding: 0 6%;
-  border: 2px dashed purple;
 }
 .rowContentOne .boxArchitects .penAndPaperContainer {
   width: 45%;
-  border: 2px dashed purple;
 }
 .rowContentOne .boxArchitects .penAndPaperContainer .penAndPaper {
   width: 100%;
@@ -258,7 +302,6 @@ html body {
   margin-bottom: 1.5rem;
 }
 .rowContentOne .boxDesign {
-  border: 2px dashed green;
   width: 80%;
   display: flex;
   justify-content: space-evenly;
@@ -281,11 +324,9 @@ html body {
   font-weight: Regular;
   font-size: 1.6rem;
   padding: 0 6%;
-  border: 2px dashed purple;
 }
 .rowContentOne .boxDesign .horizonContainer {
   width: 50%;
-  border: 2px dashed purple;
 }
 .rowContentOne .boxDesign .horizonContainer .horizon {
   width: 100%;
@@ -310,11 +351,9 @@ html body {
 .projects {
   display: flex;
   flex-direction: column;
-  border: 2px dashed purple;
   align-items: center;
 }
 .projects .villa-project {
-  border: 2px solid blue;
   width: 80%;
 }
 .projects .villa-project .villasImg {
@@ -346,7 +385,6 @@ html body {
   margin: 2rem 0;
 }
 .projects .outskirts-project {
-  border: 2px solid blue;
   width: 80%;
 }
 .projects .outskirts-project .outskirtsImg {
@@ -378,7 +416,6 @@ html body {
   margin: 2rem 0;
 }
 .projects .blocks-project {
-  border: 2px solid blue;
   width: 80%;
 }
 .projects .blocks-project .blocksImg {
