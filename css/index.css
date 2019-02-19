@@ -329,9 +329,10 @@ html body {
   right: 0px;
   color: #222222;
   font-size: 2.8rem;
-  border: 1px solid #828282;
+  letter-spacing: 1rem;
+  border: 1px solid #d9d9d9;
   padding: 30px 100px;
-  background-color: #828282;
+  background-color: #d9d9d9;
 }
 .projects .villa-project .villa-text {
   width: 40%;
@@ -339,6 +340,7 @@ html body {
   flex-direction: column;
   margin-left: 30%;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .projects .villa-project .villa-text p {
   margin: 2rem 0;
@@ -359,9 +361,10 @@ html body {
   right: 0px;
   color: #222222;
   font-size: 2.8rem;
-  border: 1px solid #828282;
+  letter-spacing: 1rem;
+  border: 1px solid #d9d9d9;
   padding: 30px 100px;
-  background-color: #828282;
+  background-color: #d9d9d9;
 }
 .projects .outskirts-project .outskirts-text {
   width: 40%;
@@ -369,6 +372,7 @@ html body {
   flex-direction: column;
   margin-left: 30%;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .projects .outskirts-project .outskirts-text p {
   margin: 2rem 0;
@@ -389,9 +393,10 @@ html body {
   right: 0px;
   color: #222222;
   font-size: 2.8rem;
-  border: 1px solid #828282;
+  letter-spacing: 1rem;
+  border: 1px solid #d9d9d9;
   padding: 30px 100px;
-  background-color: #828282;
+  background-color: #d9d9d9;
 }
 .projects .blocks-project .blocks-text {
   width: 40%;
@@ -399,6 +404,7 @@ html body {
   flex-direction: column;
   margin-left: 30%;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .projects .blocks-project .blocks-text p {
   margin: 2rem 0;
