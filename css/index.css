@@ -159,13 +159,16 @@ html body {
   html body {
     background-color: aquamarine;
   }
+  html body .desktop {
+    display: none;
+  }
 }
 html body .mobileImages {
   display: none;
 }
 @media (max-width: 500px) {
   html body .mobileImages {
-    display: 1;
+    display: initial;
   }
 }
 .header {
@@ -262,12 +265,26 @@ html body .mobileImages {
   flex-wrap: wrap;
   margin-top: 3rem;
 }
+@media (max-width: 500px) {
+  .rowContentOne {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .rowContentOne .boxArchitects {
+  border: 2px dashed orange;
   margin-bottom: 9rem;
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .rowContentOne .boxArchitects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .rowContentOne .boxArchitects .button {
   background-color: #FFFFFF;
@@ -289,6 +306,13 @@ html body .mobileImages {
 }
 .rowContentOne .boxArchitects .penAndPaperContainer {
   width: 45%;
+  border: 2px dashed green;
+}
+@media (max-width: 500px) {
+  .rowContentOne .boxArchitects .penAndPaperContainer {
+    width: 95%;
+    order: -1;
+  }
 }
 .rowContentOne .boxArchitects .penAndPaperContainer .penAndPaper {
   width: 100%;
@@ -302,10 +326,18 @@ html body .mobileImages {
   margin-bottom: 1.5rem;
 }
 .rowContentOne .boxDesign {
+  border: 2px dashed green;
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .rowContentOne .boxDesign {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .rowContentOne .boxDesign .button {
   background-color: #FFFFFF;
@@ -327,6 +359,13 @@ html body .mobileImages {
 }
 .rowContentOne .boxDesign .horizonContainer {
   width: 50%;
+  border: 2px dashed green;
+}
+@media (max-width: 500px) {
+  .rowContentOne .boxDesign .horizonContainer {
+    width: 95%;
+    order: -1;
+  }
 }
 .rowContentOne .boxDesign .horizonContainer .horizon {
   width: 100%;
@@ -340,13 +379,21 @@ html body .mobileImages {
   margin-bottom: 1.5rem;
 }
 .projectHeader {
-  width: 80%;
   font-size: 2.8rem;
   font-weight: Bold;
   color: #222222;
-  margin-left: 15rem;
   margin-top: 8rem;
   margin-bottom: 1rem;
+}
+.projectHeader h2 {
+  margin-left: 10%;
+  border: 2px dashed green;
+  width: 30rem;
+}
+@media (max-width: 500px) {
+  .projectHeader h2 {
+    margin-left: 0%;
+  }
 }
 .projects {
   display: flex;
@@ -355,6 +402,11 @@ html body .mobileImages {
 }
 .projects .villa-project {
   width: 80%;
+}
+@media (max-width: 500px) {
+  .projects .villa-project {
+    width: 100%;
+  }
 }
 .projects .villa-project .villasImg {
   width: 100%;
@@ -384,8 +436,19 @@ html body .mobileImages {
 .projects .villa-project .villa-text p {
   margin: 2rem 0;
 }
+@media (max-width: 500px) {
+  .projects .villa-project .villa-text {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .projects .outskirts-project {
   width: 80%;
+}
+@media (max-width: 500px) {
+  .projects .outskirts-project {
+    width: 100%;
+  }
 }
 .projects .outskirts-project .outskirtsImg {
   width: 100%;
@@ -415,8 +478,19 @@ html body .mobileImages {
 .projects .outskirts-project .outskirts-text p {
   margin: 2rem 0;
 }
+@media (max-width: 500px) {
+  .projects .outskirts-project .outskirts-text {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .projects .blocks-project {
   width: 80%;
+}
+@media (max-width: 500px) {
+  .projects .blocks-project {
+    width: 100%;
+  }
 }
 .projects .blocks-project .blocksImg {
   width: 100%;
@@ -500,6 +574,9 @@ html body .mobileImages {
   line-height: 2.6rem;
   display: flex;
   justify-content: space-evenly;
+}
+.footer .footerContainer .talk {
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   .footer .footerContainer {

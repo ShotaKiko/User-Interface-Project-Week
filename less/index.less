@@ -20,15 +20,15 @@ html{
     font-size: @fontSizeGeneralText;
     @media @mobile{
       background-color: aquamarine;
-      // .desktop{
-      //   display: none;
-      // }
+      .desktop{
+        display: none;
+      }
     }
 
     .mobileImages{
       display: none;
       @media @mobile {
-        display: 1;
+        display: initial;
         
       }
     }
@@ -138,13 +138,24 @@ html{
   // border: @bordertest;
   flex-wrap: wrap;
   margin-top: 3rem;
+  @media @mobile{
+    .flexcolumn-mixin();
+      
+  }
+ 
 
   .boxArchitects{
-    // border: 2px dashed green;
+    border: 2px dashed orange;
     margin-bottom: 9.0rem;
     width: 80%;
     .flexrow-mixin();
     align-items: center;
+    @media @mobile{
+      .flexcolumn-mixin();
+      width: 100%;
+    }
+   
+
 
     .button{
       background-color: @backgroundColor;
@@ -171,9 +182,14 @@ html{
 
     .penAndPaperContainer{
       width: 45%;
+      @media @mobile{
+        width: 95%;
+        order: -1;
+        ;
+      }
      
       
-      // border: @bordertest;
+      border: @bordertest;
 
       .penAndPaper{
         width: 100%;
@@ -192,10 +208,14 @@ html{
   }
   
   .boxDesign{
-    // border: 2px dashed green;
+    border: 2px dashed green;
     width: 80%;
     .flexrow-mixin();
     align-items: center;
+    @media @mobile{
+      .flexcolumn-mixin();
+      width: 100%;
+    }
 
     .button{
       background-color: @backgroundColor;
@@ -222,7 +242,12 @@ html{
 
     .horizonContainer{
       width: 50%;
-      // border: @bordertest;
+      border: @bordertest;
+      @media @mobile{
+        width: 95%;
+        order: -1;
+        ;
+      }
 
       .horizon{
         width: 100%;
@@ -242,13 +267,23 @@ html{
 }
 
 .projectHeader{
-  width: 80%;
+  
   font-size: @fontSizeSubHeaders;
   font-weight: @fontWeightSubHeaders;
   color: @colorSubHeader;
-  margin-left: 15rem;
+  
   margin-top: 8rem;
   margin-bottom: 1rem;
+
+  h2{
+    margin-left: 10%;
+    @media @mobile{
+      margin-left: 0%;
+    }
+    border: @bordertest;
+    width: 30rem;
+    
+  }
 }
 
 .projects{
@@ -259,6 +294,11 @@ html{
   .villa-project{
     // border: 2px solid blue;
     width: 80%;
+    @media @mobile{
+      width: 100%;
+      ;
+    }
+   
     .villasImg{
       width: 100%;
     }
@@ -292,6 +332,11 @@ html{
       p{
         margin: 2.0rem 0;
       }
+      @media @mobile{
+        width: 95%;
+        margin: 0 auto;
+      }
+     
      
     }
   }
@@ -299,6 +344,10 @@ html{
   .outskirts-project{
     // border: 2px solid blue;
     width: 80%;
+    @media @mobile{
+      width: 100%;
+      ;
+    }
     .outskirtsImg{
       width: 100%;
     }
@@ -332,6 +381,11 @@ html{
       p{
         margin: 2.0rem 0;
       }
+      @media @mobile{
+        width: 95%;
+        margin: 0 auto;
+      }
+     
      
     }
   }
@@ -339,6 +393,10 @@ html{
   .blocks-project{
     // border: 2px solid blue;
     width: 80%;
+    @media @mobile{
+      width: 100%;
+      ;
+    }
     .blocksImg{
       width: 100%;
     }
@@ -436,6 +494,10 @@ html{
     line-height: 2.6rem;
     .flexrow-mixin();
     justify-content: space-evenly;
+    .talk{
+      font-weight: bold;
+      
+    }
 
     @media @mobile{
       .flexcolumn-mixin();
