@@ -157,7 +157,8 @@ html body {
 }
 @media (max-width: 500px) {
   html body {
-    background-color: aquamarine;
+    border: 1px solid red;
+    max-width: 498px;
   }
   html body .desktop {
     display: none;
@@ -297,12 +298,23 @@ html body .mobileImages {
   font-size: 14px;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .rowContentOne .boxArchitects .button {
+    width: 100%;
+  }
+}
 .rowContentOne .boxArchitects .architectsText {
   width: 50%;
   line-height: 2.4rem;
   font-weight: Regular;
   font-size: 1.6rem;
   padding: 0 6%;
+}
+@media (max-width: 500px) {
+  .rowContentOne .boxArchitects .architectsText {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .rowContentOne .boxArchitects .penAndPaperContainer {
   width: 45%;
@@ -350,12 +362,23 @@ html body .mobileImages {
   font-size: 14px;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .rowContentOne .boxDesign .button {
+    width: 100%;
+  }
+}
 .rowContentOne .boxDesign .designText {
   width: 50%;
   line-height: 2.4rem;
   font-weight: Regular;
   font-size: 1.6rem;
   padding: 0 6%;
+}
+@media (max-width: 500px) {
+  .rowContentOne .boxDesign .designText {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .rowContentOne .boxDesign .horizonContainer {
   width: 50%;
@@ -392,7 +415,7 @@ html body .mobileImages {
 }
 @media (max-width: 500px) {
   .projectHeader h2 {
-    margin-left: 0%;
+    margin-left: 3%;
   }
 }
 .projects {
@@ -425,6 +448,15 @@ html body .mobileImages {
   padding: 30px 100px;
   background-color: #d9d9d9;
 }
+@media (max-width: 500px) {
+  .projects .villa-project .villa-header .villasBox {
+    bottom: -60px;
+    right: 3%;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
 .projects .villa-project .villa-text {
   width: 40%;
   display: flex;
@@ -438,8 +470,9 @@ html body .mobileImages {
 }
 @media (max-width: 500px) {
   .projects .villa-project .villa-text {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
+    margin-top: 60px;
   }
 }
 .projects .outskirts-project {
@@ -467,6 +500,15 @@ html body .mobileImages {
   padding: 30px 100px;
   background-color: #d9d9d9;
 }
+@media (max-width: 500px) {
+  .projects .outskirts-project .outskirts-header .outskirtsBox {
+    bottom: -60px;
+    right: 5%;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
 .projects .outskirts-project .outskirts-text {
   width: 40%;
   display: flex;
@@ -482,6 +524,7 @@ html body .mobileImages {
   .projects .outskirts-project .outskirts-text {
     width: 95%;
     margin: 0 auto;
+    margin-top: 5.25rem;
   }
 }
 .projects .blocks-project {
@@ -509,6 +552,15 @@ html body .mobileImages {
   padding: 30px 100px;
   background-color: #d9d9d9;
 }
+@media (max-width: 500px) {
+  .projects .blocks-project .blocks-header .blocksBox {
+    bottom: -60px;
+    right: 1.75%;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
 .projects .blocks-project .blocks-text {
   width: 40%;
   display: flex;
@@ -524,6 +576,7 @@ html body .mobileImages {
   .projects .blocks-project .blocks-text {
     width: 95%;
     margin: 0 auto;
+    margin-top: 5rem;
   }
 }
 .footer {
