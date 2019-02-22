@@ -690,22 +690,6 @@ html body .mobileImages {
     margin-top: 2rem;
   }
 }
-.serviceMenuOptions {
-  visibility: hidden;
-  text-decoration: none;
-  width: 100%;
-  height: 780px;
-  position: absolute;
-  background-color: #828282;
-  z-index: 1;
-  opacity: 0.8;
-  top: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 8.5rem;
-}
 .servicesMotto {
   position: absolute;
   bottom: 3rem;
@@ -718,4 +702,67 @@ html body .mobileImages {
   width: 90%;
   border: 2px dashed green;
   margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.servicesContentContainer .servicesContent {
+  margin-bottom: 3rem;
+}
+.servicesContentContainer .tabs-links {
+  border: 2px dashed green;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.servicesContentContainer .tabs-links .tabs-link-selected {
+  background-color: #5E9FB9;
+  color: #FFF;
+}
+.servicesContentContainer .tabs-links .tabs-link {
+  border: 1px solid #222222;
+  padding: 4px 0px;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  cursor: pointer;
+}
+.servicesContentContainer .tabs-items {
+  border: 3px solid blueviolet;
+}
+.servicesContentContainer .tabs-items .tabs-item {
+  display: none;
+}
+.servicesContentContainer .tabs-items .tabs-item-selected {
+  display: initial;
+}
+.servicesContentContainer .tabs-items .tabs-item-title {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.2rem;
+  font-weight: bold;
+  border: 1px dashed red;
+  margin-bottom: 10px;
+}
+.servicesContentContainer .tabs-items .tabs-content {
+  border: 2px solid darkorange;
+  display: flex;
+  justify-content: space-between;
+}
+.servicesContentContainer .tabs-items .tabs-content .tabs-item-description {
+  width: 49%;
+  font-size: 1.6rem;
+  line-height: 30px;
+  border: 2px dashed green;
+}
+.servicesContentContainer .tabs-items .tabs-content .tabs-item-description .bottomp {
+  margin-top: 30px;
+}
+.servicesContentContainer .tabs-items .tabs-content .tabs-image-container {
+  width: 49%;
+}
+.servicesContentContainer .tabs-items .tabs-content .tabs-image-container .tabs-image {
+  width: 100%;
 }

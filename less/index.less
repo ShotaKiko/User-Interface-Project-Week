@@ -620,23 +620,23 @@ html{
 //~~~~~~~~~~~~~~~~~~~~~~Services design~~~~~~~~~~~~~~~~~
 
 
-.serviceMenuOptions{
-  visibility: hidden;
-  // display: none;
-  text-decoration: none;
-  width: 100%;
-  height: 780px;
-  //border: 2px solid purple;
-  position: absolute;
-  background-color: #828282;
-  z-index:1;
-  opacity: 0.8;
-  top: 0px;
-  .flexcolumn-mixin();
-  justify-content: center;
-  align-items: center;
-  line-height: @lineHeightNav;
-}
+// .serviceMenuOptions{
+//   visibility: hidden;
+//   // display: none;
+//   text-decoration: none;
+//   width: 100%;
+//   height: 780px;
+//   //border: 2px solid purple;
+//   position: absolute;
+//   background-color: #828282;
+//   z-index:1;
+//   opacity: 0.8;
+//   top: 0px;
+//   .flexcolumn-mixin();
+//   justify-content: center;
+//   align-items: center;
+//   line-height: @lineHeightNav;
+// }
 
 .servicesMotto{
   position: absolute;
@@ -651,4 +651,89 @@ html{
   width: 90%;
   border: @bordertest;
   margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  .servicesContent{
+    margin-bottom: 3rem;
+  }
+
+  .tabs-links{
+    border:@bordertest;
+    .flexrow-mixin();
+    justify-content: space-between;
+    margin-bottom: 30px; 
+  
+
+    .tabs-link-selected{
+      background-color: @tabSelectedBackground;
+      color: #FFF;
+    
+    }
+
+    .tabs-link{
+      border: 1px solid #222222;
+      padding: 4px 0px; 
+      width: 20%;
+      .flexrow-mixin();
+      font-weight: bold;
+      cursor: pointer;  
+     
+    }
+  }
+
+  .tabs-items{
+    border: 3px solid blueviolet;
+    
+    .tabs-item{
+    display: none;
+    }
+    
+    .tabs-item-selected{
+      display: initial;
+    }
+    
+    .tabs-item-title{
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 2.2rem;
+      font-weight: bold;
+      border: 1px dashed red;
+      margin-bottom: 10px;
+    }
+
+    .tabs-content{
+      border:2px solid darkorange;
+      display: flex;
+      justify-content: space-between;
+
+      .tabs-item-description{
+        width: 49%;
+        font-size: 1.6rem;
+        line-height: 30px;
+        border: @bordertest;
+        .bottomp{
+          margin-top: 30px;
+        }
+      }
+
+      .tabs-image-container{
+        width: 49%;
+        .tabs-image{
+          width: 100%;
+        }
+      }
+    }
+
+
+
+  }
+
+
+
+
+
 }
+
+
