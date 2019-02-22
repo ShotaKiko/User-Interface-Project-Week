@@ -706,3 +706,16 @@ html body .mobileImages {
   align-items: center;
   line-height: 8.5rem;
 }
+.servicesMotto {
+  position: absolute;
+  bottom: 3rem;
+  left: 9rem;
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  font-weight: Bold;
+}
+.servicesContentContainer {
+  width: 90%;
+  border: 2px dashed green;
+  margin: 0 auto;
+}
