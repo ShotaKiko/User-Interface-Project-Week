@@ -189,20 +189,23 @@ html body .mobileImages {
     align-content: center;
   }
 }
+.header .hamburger-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 8%;
+}
 .header .hamburger-closed {
   display: none;
-  border: 2px dashed green;
+  cursor: pointer;
 }
 .header .hamburger-open {
-  border: 2px dashed green;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .header .hamburger-open {
     margin-right: 4.5rem;
   }
-}
-.header .menu-options {
-  display: none;
 }
 .header .title {
   width: 10%;
@@ -238,6 +241,38 @@ html body .mobileImages {
     max-width: 498px;
     width: 100%;
   }
+}
+.watermark .menu-options {
+  visibility: hidden;
+  text-decoration: none;
+  width: 100%;
+  height: 780px;
+  position: absolute;
+  background-color: #828282;
+  z-index: 1;
+  opacity: 0.8;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 8.5rem;
+}
+@media (max-width: 500px) {
+  .watermark .menu-options {
+    height: 400px;
+  }
+}
+.watermark .menu-options a:hover {
+  color: #222222;
+}
+.watermark .menu-options .nav {
+  font-size: 4.8rem;
+  font-weight: Bold;
+  font-family: Roboto, Arial, sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 .watermark .motto {
   position: absolute;
