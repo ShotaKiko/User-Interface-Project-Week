@@ -20,7 +20,7 @@ html{
     font-size: @fontSizeGeneralText;
     @media @mobile{
       // background-color: aquamarine;
-      border: 1px solid red;
+      //border: 1px solid red;
       max-width: 498px;
       .desktop{
         display: none;
@@ -43,14 +43,14 @@ html{
 
 .header{
   background-color: #828282; //ADD CORRECT NAV COLOR
-  border: 1px solid red;
+  //border: 1px solid red;
   color: @jumbotronColor;
   height: 60px;
   display: flex;
   justify-content: space-between;
 
   @media @mobile{
-    border: @bordertest;
+    //border: @bordertest;
     max-width: 498px;
     width: 100%;
     align-items: center;
@@ -108,7 +108,7 @@ html{
 
 .watermark{
     width: 100%;
-    border: @bordertest;
+    //border: @bordertest;
     position: relative;
     text-align: left;
     color: @jumbotronColor;
@@ -194,7 +194,7 @@ html{
  
 
   .boxArchitects{
-    border: 2px dashed orange;
+    //border: 2px dashed orange;
     margin-bottom: 9.0rem;
     width: 80%;
     .flexrow-mixin();
@@ -245,7 +245,7 @@ html{
       }
      
       
-      border: @bordertest;
+      //border: @bordertest;
 
       .penAndPaper{
         width: 100%;
@@ -264,7 +264,7 @@ html{
   }
   
   .boxDesign{
-    border: 2px dashed green;
+    //border: 2px dashed green;
     width: 80%;
     .flexrow-mixin();
     align-items: center;
@@ -305,7 +305,7 @@ html{
 
     .horizonContainer{
       width: 50%;
-      border: @bordertest;
+      //border: @bordertest;
       @media @mobile{
         width: 95%;
         order: -1;
@@ -343,7 +343,7 @@ html{
     @media @mobile{
       margin-left: 3%;
     }
-    border: @bordertest;
+    //border: @bordertest;
     width: 30rem;
     
   }
@@ -649,7 +649,7 @@ html{
 
 .servicesContentContainer{
   width: 90%;
-  border: @bordertest;
+  //border: @bordertest;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -659,7 +659,7 @@ html{
   }
 
   .tabs-links{
-    border:@bordertest;
+    //border:@bordertest;
     .flexrow-mixin();
     justify-content: space-between;
     margin-bottom: 30px; 
@@ -671,19 +671,24 @@ html{
     
     }
 
+    .tabs-link:hover{
+      color: @tabHoverColor;
+      background-color: @tabHoverBackground;
+    }
     .tabs-link{
       border: 1px solid #222222;
       padding: 4px 0px; 
       width: 20%;
       .flexrow-mixin();
       font-weight: bold;
-      cursor: pointer;  
+      cursor: pointer;
+
      
     }
   }
 
   .tabs-items{
-    border: 3px solid blueviolet;
+    //border: 3px solid blueviolet;
     
     .tabs-item{
     display: none;
@@ -699,12 +704,12 @@ html{
       justify-content: flex-start;
       font-size: 2.2rem;
       font-weight: bold;
-      border: 1px dashed red;
+      //border: 1px dashed red;
       margin-bottom: 10px;
     }
 
     .tabs-content{
-      border:2px solid darkorange;
+      //border:2px solid darkorange;
       display: flex;
       justify-content: space-between;
 
@@ -712,7 +717,7 @@ html{
         width: 49%;
         font-size: 1.6rem;
         line-height: 30px;
-        border: @bordertest;
+        //border: @bordertest;
         .bottomp{
           margin-top: 30px;
         }

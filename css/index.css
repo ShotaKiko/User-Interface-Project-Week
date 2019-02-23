@@ -157,7 +157,6 @@ html body {
 }
 @media (max-width: 500px) {
   html body {
-    border: 1px solid red;
     max-width: 498px;
   }
   html body .desktop {
@@ -174,7 +173,6 @@ html body .mobileImages {
 }
 .header {
   background-color: #828282;
-  border: 1px solid red;
   color: #FFFFFF;
   height: 60px;
   display: flex;
@@ -182,7 +180,6 @@ html body .mobileImages {
 }
 @media (max-width: 500px) {
   .header {
-    border: 2px dashed green;
     max-width: 498px;
     width: 100%;
     align-items: center;
@@ -231,7 +228,6 @@ html body .mobileImages {
 }
 .watermark {
   width: 100%;
-  border: 2px dashed green;
   position: relative;
   text-align: left;
   color: #FFFFFF;
@@ -311,7 +307,6 @@ html body .mobileImages {
   }
 }
 .rowContentOne .boxArchitects {
-  border: 2px dashed orange;
   margin-bottom: 9rem;
   width: 80%;
   display: flex;
@@ -356,7 +351,6 @@ html body .mobileImages {
 }
 .rowContentOne .boxArchitects .penAndPaperContainer {
   width: 45%;
-  border: 2px dashed green;
 }
 @media (max-width: 500px) {
   .rowContentOne .boxArchitects .penAndPaperContainer {
@@ -376,7 +370,6 @@ html body .mobileImages {
   margin-bottom: 1.5rem;
 }
 .rowContentOne .boxDesign {
-  border: 2px dashed green;
   width: 80%;
   display: flex;
   justify-content: space-evenly;
@@ -420,7 +413,6 @@ html body .mobileImages {
 }
 .rowContentOne .boxDesign .horizonContainer {
   width: 50%;
-  border: 2px dashed green;
 }
 @media (max-width: 500px) {
   .rowContentOne .boxDesign .horizonContainer {
@@ -448,7 +440,6 @@ html body .mobileImages {
 }
 .projectHeader h2 {
   margin-left: 10%;
-  border: 2px dashed green;
   width: 30rem;
 }
 @media (max-width: 500px) {
@@ -700,7 +691,6 @@ html body .mobileImages {
 }
 .servicesContentContainer {
   width: 90%;
-  border: 2px dashed green;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -709,7 +699,6 @@ html body .mobileImages {
   margin-bottom: 3rem;
 }
 .servicesContentContainer .tabs-links {
-  border: 2px dashed green;
   display: flex;
   justify-content: space-evenly;
   justify-content: space-between;
@@ -719,6 +708,10 @@ html body .mobileImages {
   background-color: #5E9FB9;
   color: #FFF;
 }
+.servicesContentContainer .tabs-links .tabs-link:hover {
+  color: #FFF;
+  background-color: #222222;
+}
 .servicesContentContainer .tabs-links .tabs-link {
   border: 1px solid #222222;
   padding: 4px 0px;
@@ -727,9 +720,6 @@ html body .mobileImages {
   justify-content: space-evenly;
   font-weight: bold;
   cursor: pointer;
-}
-.servicesContentContainer .tabs-items {
-  border: 3px solid blueviolet;
 }
 .servicesContentContainer .tabs-items .tabs-item {
   display: none;
@@ -743,11 +733,9 @@ html body .mobileImages {
   justify-content: flex-start;
   font-size: 2.2rem;
   font-weight: bold;
-  border: 1px dashed red;
   margin-bottom: 10px;
 }
 .servicesContentContainer .tabs-items .tabs-content {
-  border: 2px solid darkorange;
   display: flex;
   justify-content: space-between;
 }
@@ -755,7 +743,6 @@ html body .mobileImages {
   width: 49%;
   font-size: 1.6rem;
   line-height: 30px;
-  border: 2px dashed green;
 }
 .servicesContentContainer .tabs-items .tabs-content .tabs-item-description .bottomp {
   margin-top: 30px;

@@ -67,3 +67,11 @@ class TabItem {
 
 let links = document.querySelectorAll('.tabs-link');
 links.forEach(link => new TabLink(link))
+
+
+// let hoverlinks = document.querySelector('.tabs-links')
+
+// hoverlinks.addEventListener('mouseover', event =>{
+//   hoverlinks.style.color = "red"
+//   console.log('hover mouseover')
+// })
