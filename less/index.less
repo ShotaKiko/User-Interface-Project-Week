@@ -645,6 +645,10 @@ html{
   font-size: @fontSizeJumbotron;
   line-height: @lineHeightJumbotron;
   font-weight: @fontWeightJumbotron;
+  @media @mobile{
+    bottom: 3rem;
+    left: 2rem;
+  }
 }
 
 .servicesContentContainer{
@@ -662,7 +666,11 @@ html{
     //border:@bordertest;
     .flexrow-mixin();
     justify-content: space-between;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    @media @mobile{
+      .flexcolumn-mixin();
+      width: 100%;
+    }
   
 
     .tabs-link-selected{
@@ -682,6 +690,12 @@ html{
       .flexrow-mixin();
       font-weight: bold;
       cursor: pointer;
+      @media @mobile{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 10px 0px;
+      }
 
      
     }
@@ -712,19 +726,29 @@ html{
       //border:2px solid darkorange;
       display: flex;
       justify-content: space-between;
+      @media @mobile{
+        .flexcolumn-mixin();
+        width: 100%;
+      }
 
       .tabs-item-description{
-        width: 49%;
+        width: 48%;
         font-size: 1.6rem;
         line-height: 30px;
         //border: @bordertest;
+        width: 100%;
         .bottomp{
           margin-top: 30px;
+
         }
       }
 
       .tabs-image-container{
         width: 49%;
+        @media @mobile{
+          width: 100%;
+          margin-top: 2rem;
+        }
         .tabs-image{
           width: 100%;
         }

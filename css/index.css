@@ -689,6 +689,12 @@ html body .mobileImages {
   line-height: 7.5rem;
   font-weight: Bold;
 }
+@media (max-width: 500px) {
+  .servicesMotto {
+    bottom: 3rem;
+    left: 2rem;
+  }
+}
 .servicesContentContainer {
   width: 90%;
   margin: 0 auto;
@@ -703,6 +709,13 @@ html body .mobileImages {
   justify-content: space-evenly;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .servicesContentContainer .tabs-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .servicesContentContainer .tabs-links .tabs-link-selected {
   background-color: #5E9FB9;
@@ -720,6 +733,14 @@ html body .mobileImages {
   justify-content: space-evenly;
   font-weight: bold;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .servicesContentContainer .tabs-links .tabs-link {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px 0px;
+  }
 }
 .servicesContentContainer .tabs-items .tabs-item {
   display: none;
@@ -739,16 +760,30 @@ html body .mobileImages {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .servicesContentContainer .tabs-items .tabs-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .servicesContentContainer .tabs-items .tabs-content .tabs-item-description {
-  width: 49%;
+  width: 48%;
   font-size: 1.6rem;
   line-height: 30px;
+  width: 100%;
 }
 .servicesContentContainer .tabs-items .tabs-content .tabs-item-description .bottomp {
   margin-top: 30px;
 }
 .servicesContentContainer .tabs-items .tabs-content .tabs-image-container {
   width: 49%;
+}
+@media (max-width: 500px) {
+  .servicesContentContainer .tabs-items .tabs-content .tabs-image-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 .servicesContentContainer .tabs-items .tabs-content .tabs-image-container .tabs-image {
   width: 100%;
